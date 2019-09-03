@@ -1,0 +1,29 @@
+{
+  "name": "nanosemantics-nuxt-strapi",
+  "version": "1.0.0",
+  "description": "SPA App Nanosemantics with Nuxt and Strapi",
+  "main": "index.js",
+  "author": "",
+  "scripts": {
+    "start:client": "cd client && npm run dev",
+    "start:server": "cd strapi-server && strapi develop",
+    "start": "npm-run-all -p start:client start:server",
+    "commit": "git-cz",
+    "commit-all": "git add . && git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.nanosemantics.ru:site/rnd-nuxt-strapi.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "navigations",
+  "info": {
+    "name": "navigation",
+    "description": "Top menu navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title_ru": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

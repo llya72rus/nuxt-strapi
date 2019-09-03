@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/accordions",
+      "handler": "Accordion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accordions/count",
+      "handler": "Accordion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accordions/:id",
+      "handler": "Accordion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accordions",
+      "handler": "Accordion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accordions/:id",
+      "handler": "Accordion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accordions/:id",
+      "handler": "Accordion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

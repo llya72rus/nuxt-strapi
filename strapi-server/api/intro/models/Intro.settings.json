@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "intros",
+  "info": {
+    "name": "intro",
+    "description": "Home page intro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title_ru": {
+      "type": "string"
+    },
+    "markdown_content_en": {
+      "type": "text"
+    },
+    "image_ru": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "image_en": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "markdown_content_ru": {
+      "type": "string"
+    }
+  }
+}
